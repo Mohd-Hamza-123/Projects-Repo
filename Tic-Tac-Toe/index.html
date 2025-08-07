@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #chess {
+        margin: 0 auto;
+        width: 502px;
+        height: 500px;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .box {
+        width: calc(500px / 3);
+        height: calc(500px / 3);
+        border: 1px solid black;
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button{
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="winner"></h1>
+    <section id="chess">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+    <p>Choose </p>
+    <button>X</button>
+    <button>O</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
